@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- two way data binding
+    interpolation  -->
+    <div id="app">
+      <p>{{ message }}</p>
+      <input v-model="message" type="text">
+      <button v-on:click="method.toggle" type="button"></button>
+    </div>
+
+    <div id="toggleBox">
+      <h2 v-if="onOff">Now you see me!</h2>
+    </div>
+
+
+    <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
