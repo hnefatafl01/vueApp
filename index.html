@@ -17,6 +17,9 @@
       <h2 v-if="onOff">Now you see me!</h2>
     </div>
 
+    <div id="todo-app">
+      <ol><todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item></ol>
+    </div>
 
     <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
     <script src="app.js"></script>

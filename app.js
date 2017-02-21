@@ -16,3 +16,19 @@ const toggleBox = new Vue({
     onOff: false
   }
 })
+
+Vue.component('todo-item', {
+  props: ['todo'],
+  template: '<li>{{ todo.text }}</li>'
+})
+
+var todoApp = new Vue({
+  el: '#todo-app',
+  data: {
+    groceryList: [
+      { text: 'Veggies'},
+      { text: 'Meat'},
+      { text: 'Fruit'},
+      { text: 'Potatoes'}
+  ]}
+})
